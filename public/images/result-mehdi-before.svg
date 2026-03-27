@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <rect width="900" height="1200" fill="#181818" />
+  <rect x="240" y="160" width="420" height="840" rx="210" fill="#ffffff" fill-opacity="0.08" />
+  <text x="66" y="1080" fill="#f6f1e8" font-size="56" font-family="Arial, sans-serif">MEHDI BEFORE</text>
+</svg>

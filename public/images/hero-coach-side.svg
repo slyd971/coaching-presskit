@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131313" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#bg)" />
+  <circle cx="920" cy="220" r="160" fill="#f3c56b" fill-opacity="0.18" />
+  <rect x="160" y="1120" width="880" height="120" rx="28" fill="#0b0b0b" />
+  <circle cx="570" cy="320" r="74" fill="#e8d7c0" />
+  <rect x="430" y="410" width="280" height="520" rx="130" fill="#f1f1f1" fill-opacity="0.12" />
+  <rect x="720" y="510" width="170" height="72" rx="36" fill="#f1f1f1" fill-opacity="0.12" />
+  <rect x="310" y="520" width="130" height="72" rx="36" fill="#f1f1f1" fill-opacity="0.12" />
+  <rect x="470" y="920" width="90" height="260" rx="45" fill="#d8d8d8" fill-opacity="0.12" />
+  <rect x="590" y="920" width="90" height="260" rx="45" fill="#d8d8d8" fill-opacity="0.12" />
+  <rect x="760" y="560" width="120" height="420" rx="24" fill="#242424" />
+  <rect x="820" y="330" width="36" height="300" rx="18" fill="#474747" />
+  <text x="100" y="1290" fill="#f6f1e8" font-size="58" font-family="Arial, sans-serif" letter-spacing="6">COACHING FLOOR</text>
+</svg>
+

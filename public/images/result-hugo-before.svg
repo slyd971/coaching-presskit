@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <rect width="900" height="1200" fill="#1a1a1a" />
+  <rect x="190" y="150" width="520" height="820" rx="260" fill="#ffffff" fill-opacity="0.08" />
+  <text x="90" y="1080" fill="#f6f1e8" font-size="62" font-family="Arial, sans-serif">HUGO BEFORE</text>
+</svg>

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --font-space-grotesk: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  --font-playfair: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: var(--font-space-grotesk);
+  --font-serif: var(--font-playfair);
+  --color-background: var(--brand-background);
+  --color-foreground: var(--brand-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(243, 197, 107, 0.12), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(138, 108, 255, 0.14), transparent 28%),
+    linear-gradient(180deg, var(--brand-gradient-start), var(--brand-gradient-end));
+  color: var(--brand-text);
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}

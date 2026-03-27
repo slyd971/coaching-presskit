@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2000">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414" />
+      <stop offset="45%" stop-color="#1f1a18" />
+      <stop offset="100%" stop-color="#0d1017" />
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#171717" />
+      <stop offset="100%" stop-color="#0c0c0c" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="2000" fill="url(#bg)" />
+  <rect y="1380" width="1600" height="620" fill="url(#floor)" />
+  <circle cx="1180" cy="320" r="210" fill="#f3c56b" fill-opacity="0.2" />
+  <circle cx="370" cy="540" r="150" fill="#73f0c2" fill-opacity="0.08" />
+  <rect x="1150" y="560" width="160" height="720" rx="30" fill="#232323" />
+  <rect x="1090" y="640" width="280" height="36" rx="18" fill="#444" />
+  <rect x="1090" y="930" width="280" height="36" rx="18" fill="#444" />
+  <circle cx="1228" cy="340" r="72" fill="#e8d7c0" />
+  <rect x="1120" y="420" width="220" height="420" rx="110" fill="#f1f1f1" fill-opacity="0.12" />
+  <rect x="1090" y="800" width="90" height="330" rx="45" fill="#ddd" fill-opacity="0.14" />
+  <rect x="1275" y="800" width="90" height="330" rx="45" fill="#ddd" fill-opacity="0.14" />
+  <circle cx="690" cy="470" r="78" fill="#dfcfb9" />
+  <rect x="540" y="560" width="310" height="520" rx="130" fill="#f3f3f3" fill-opacity="0.1" />
+  <rect x="430" y="620" width="150" height="90" rx="45" fill="#efefef" fill-opacity="0.1" />
+  <rect x="820" y="640" width="180" height="86" rx="40" fill="#efefef" fill-opacity="0.1" />
+  <rect x="580" y="1040" width="110" height="360" rx="55" fill="#d8d8d8" fill-opacity="0.1" />
+  <rect x="720" y="1040" width="110" height="360" rx="55" fill="#d8d8d8" fill-opacity="0.1" />
+  <rect x="230" y="1160" width="1040" height="90" rx="30" fill="#101010" />
+  <text x="110" y="1770" fill="#f6f1e8" font-size="84" font-family="Arial, sans-serif" letter-spacing="8">PRIVATE COACHING SESSION</text>
+  <text x="110" y="1870" fill="#f3c56b" font-size="34" font-family="Arial, sans-serif" letter-spacing="7">MATTEO RENAUD   PARIS</text>
+</svg>
+

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <rect width="900" height="1200" fill="#11141b" />
+  <circle cx="180" cy="220" r="120" fill="#73f0c2" fill-opacity="0.16" />
+  <rect x="220" y="140" width="460" height="860" rx="230" fill="#ffffff" fill-opacity="0.13" />
+  <text x="85" y="1080" fill="#f6f1e8" font-size="58" font-family="Arial, sans-serif">SARAH AFTER</text>
+</svg>
