@@ -8,25 +8,32 @@ type MethodProps = {
 
 export function Method({ coach }: MethodProps) {
   return (
-    <Section id="method" className="pt-2 md:pt-4">
+    <Section id="method" className="pt-3 md:pt-6">
       <SectionHeading
         eyebrow="Méthode"
         title={coach.method.title}
         subtitle={coach.method.subtitle}
       />
-      <div className="grid gap-4 sm:gap-5 lg:grid-cols-3">
-        {coach.method.pillars.map((pillar) => (
+      <div className="grid gap-3.5 sm:gap-4 lg:grid-cols-3">
+        {coach.method.pillars.map((pillar, index) => (
           <article
             key={pillar.title}
-            className="rounded-[1.4rem] border border-[color:var(--brand-border)] bg-[linear-gradient(160deg,rgba(255,255,255,0.07),rgba(255,255,255,0.03))] p-5 sm:rounded-[1.8rem] sm:p-6"
+            className={`relative overflow-hidden rounded-[1.35rem] border border-white/12 p-5 sm:rounded-[1.8rem] sm:p-6 ${
+              index === 1
+                ? "bg-[linear-gradient(145deg,rgba(243,197,107,0.2),rgba(243,197,107,0.06),rgba(255,255,255,0.03))]"
+                : "bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))]"
+            }`}
           >
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[color:var(--brand-accent)] sm:text-sm sm:tracking-[0.3em]">
+            <span className="pointer-events-none absolute -right-5 -top-8 text-[5rem] font-semibold leading-none text-white/7 sm:text-[6.5rem]">
               {pillar.tag}
+            </span>
+            <p className="text-[10px] uppercase tracking-[0.22em] text-[color:var(--brand-accent)] sm:text-xs sm:tracking-[0.3em]">
+              Pilier {pillar.tag}
             </p>
-            <h3 className="mt-4 text-xl font-semibold text-[color:var(--brand-text)] sm:mt-5 sm:text-2xl">
+            <h3 className="mt-4 text-2xl font-semibold leading-tight text-[color:var(--brand-text)] sm:text-[2rem]">
               {pillar.title}
             </h3>
-            <p className="mt-3 text-[0.98rem] leading-7 text-[color:var(--brand-muted-text)] sm:mt-4 sm:text-base">
+            <p className="mt-3 text-[0.98rem] leading-7 text-[color:var(--brand-muted-text)] sm:text-base sm:leading-8">
               {pillar.description}
             </p>
           </article>

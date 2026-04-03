@@ -17,16 +17,16 @@ export function SectionHeading({
     <div
       className={
         align === "center"
-          ? "mx-auto mb-7 max-w-3xl text-center md:mb-10"
-          : "mb-7 max-w-3xl md:mb-10"
+          ? "mx-auto mb-8 max-w-3xl text-center md:mb-11"
+          : "mb-8 max-w-4xl md:mb-11"
       }
     >
       {eyebrow ? <Badge>{eyebrow}</Badge> : null}
-      <h2 className="mt-4 text-[1.9rem] font-semibold leading-[1.05] text-[color:var(--brand-text)] md:text-5xl">
+      <h2 className="mt-4 font-serif text-[2rem] leading-[0.98] text-[color:var(--brand-text)] sm:text-[2.6rem] md:text-[3.4rem]">
         {title}
       </h2>
       {subtitle ? (
-        <p className="mt-3 text-[0.96rem] leading-7 text-[color:var(--brand-muted-text)] md:mt-4 md:text-lg">
+        <p className="mt-3 max-w-3xl text-[0.96rem] leading-7 text-[color:var(--brand-muted-text)] md:mt-4 md:text-lg md:leading-8">
           {subtitle}
         </p>
       ) : null}

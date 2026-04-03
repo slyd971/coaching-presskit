@@ -1,8 +1,13 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import type { CSSProperties } from "react";
+
 import { About } from "@/components/sections/About";
 import { Contact } from "@/components/sections/Contact";
 import { CTA } from "@/components/sections/CTA";
 import { FAQ } from "@/components/sections/FAQ";
-import { Hero } from "@/components/sections/Hero";
+import { Hero, type HeroTheme } from "@/components/sections/Hero";
 import { Header } from "@/components/layout/Header";
 import { Method } from "@/components/sections/Method";
 import { Programs } from "@/components/sections/Programs";
@@ -16,20 +21,50 @@ import { createBrandingVars } from "@/lib/branding";
 import { getCoachNavigation } from "@/lib/navigation";
 import { hasItems, shouldRenderSection } from "@/lib/utils";
 
+function getThemeOverrides_(theme: HeroTheme): CSSProperties {
+  if (theme === "dark") {
+    return {};
+  }
+
+  return {
+    "--brand-background": "#f6f1e7",
+    "--brand-surface": "rgba(26,26,26,0.05)",
+    "--brand-surface-strong": "rgba(26,26,26,0.1)",
+    "--brand-text": "#141414",
+    "--brand-muted-text": "rgba(20,20,20,0.72)",
+    "--brand-border": "rgba(20,20,20,0.15)",
+    "--brand-glow": "rgba(243,197,107,0.24)",
+    "--brand-gradient-start": "#f6f1e7",
+    "--brand-gradient-end": "#e8dece",
+  } as CSSProperties;
+}
+
 export default function HomePage() {
   const coach = coachData;
-  const style = createBrandingVars(coach.branding);
-  const navigation = getCoachNavigation(coach);
+  const [theme, setTheme] = useState<HeroTheme>("dark");
+
+  const style = useMemo(() => {
+    return {
+      ...createBrandingVars(coach.branding),
+      ...getThemeOverrides_(theme),
+    };
+  }, [coach.branding, theme]);
+
+  const navigation = useMemo(() => getCoachNavigation(coach), [coach]);
 
   return (
-    <main style={style} className="min-h-screen">
+    <main
+      style={style}
+      data-theme={theme}
+      className="min-h-screen bg-[linear-gradient(168deg,var(--brand-gradient-start),var(--brand-gradient-end))]"
+    >
       <Header
         name={coach.identity.name}
         cta={coach.hero.primaryCta}
         items={navigation}
       />
 
-      <Hero coach={coach} />
+      <Hero coach={coach} theme={theme} onThemeChange={setTheme} />
 
       {shouldRenderSection({
         enabled: coach.sections?.socialProof,
