@@ -72,7 +72,7 @@ export function Results({ coach }: ResultsProps) {
                     </p>
                   </div>
                   <blockquote className="rounded-[1rem] border border-white/10 bg-black/24 p-4 text-[0.95rem] leading-6 text-[color:var(--brand-muted-text)] sm:rounded-[1.3rem] sm:p-5 sm:text-base sm:leading-7">
-                    "{item.quote}"
+                    &ldquo;{item.quote}&rdquo;
                   </blockquote>
                 </div>
               </div>

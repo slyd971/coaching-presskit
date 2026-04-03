@@ -22,7 +22,7 @@ export function SocialContent({ coach }: SocialContentProps) {
             Presence digitale
           </p>
           <p className="mt-4 text-2xl font-semibold text-[color:var(--brand-text)] sm:mt-5 sm:text-3xl">
-            Des contenus reguliers qui montrent la methode, le niveau d'exigence et les resultats.
+            Des contenus reguliers qui montrent la methode, le niveau d&apos;exigence et les resultats.
           </p>
           <p className="mt-4 text-[0.98rem] leading-7 text-[color:var(--brand-muted-text)] sm:mt-5 sm:text-base">
             Entre demonstrations, conseils applicables et extraits de seances, les reseaux servent ici a prolonger la confiance creee pendant la prise de contact.

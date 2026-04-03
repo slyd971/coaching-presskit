@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import { Badge } from "@/components/ui/Badge";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -187,10 +187,6 @@ export function Hero({ coach, theme, onThemeChange }: HeroProps) {
   }, [coach.gallery, coach.hero.image]);
 
   const [activeModel, setActiveModel] = useState<HeroModel>("signature");
-
-  useEffect(() => {
-    setActiveModel("signature");
-  }, [coach.identity.name]);
 
   const signatureImage = heroImages[0] ?? coach.hero.image;
   const photoImage = heroImages[1] ?? signatureImage;
